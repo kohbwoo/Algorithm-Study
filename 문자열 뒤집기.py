@@ -7,14 +7,14 @@ def solution(num_String):
 
 
 
-a = input()
-print(solution(a))
+# a = input()
+# print(solution(a))
 
-# print(solution("0001100"))
-# print(solution("11111"))
-# print(solution("0000001"))
-# print(solution("11001100110011000001"))
-# print(solution("11101101"))
+print(solution("0001100"))
+print(solution("11111"))
+print(solution("0000001"))
+print(solution("11001100110011000001"))
+print(solution("11101101"))
 #
 #
 # print(solution("0"))
