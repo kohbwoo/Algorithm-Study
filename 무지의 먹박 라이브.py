@@ -1,13 +1,23 @@
 def solution(food_times, k):
-    count = 0
-    for i in range(len(food_times)):
-        for j in range(0,food_times[i]):
+    food = -1
+    for k in range(k, 0, -1):
+        food = food + 1
+        if food == len(food_times):
+            food = 0
+        if food_times[food] == 0:
+            food = food + 1
+        food_times[food] -= 1
+        print(food_times, food)\
 
-            if k == 0:
-                return food_times,k,count
-            else:
-                count = count + 1
-                k = k - 1
+
+    if food_times[food] == 0:
+        food = food + 1
+    if food == len(food_times):
+        food = 0
+
+    return food + 1
+
+
 
 
     answer = 0
